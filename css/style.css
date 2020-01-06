@@ -7,7 +7,8 @@
 header {
     height: 48px;
     width: 100%;
-    border-bottom: 1px solid rgba(211, 211, 211, 0.486);;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.486);
+    position: fixed;
 }
 
 nav li {
@@ -35,3 +36,58 @@ nav li {
     font-size: 1.5em;
 }
 
+.nav-logo {
+    position: absolute;
+    height: 48px;
+    width: 106px;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+}
+
+.nav-logo img {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Cover section */ 
+.main {
+    top:52px;
+    height: 8670px;
+    position: relative;
+}
+
+.cover-header {
+    position: relative;
+    top:100px;
+    left:20px;
+    color: white;
+}
+
+
+.cover-grid {
+    grid-column: 1fr;
+    display: grid;
+    grid-template-rows: 213px 213px 213px;
+    grid-gap: 10px;
+}
+
+
+.cover-story {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/bitmain-antminer-cryptocurrency-blockchain-bear-market-bear-downturn-796x448.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-color: rgb(136, 135, 135);
+    background-blend-mode: multiply;
+}
+
+.cover-byline {
+    display: inline-block;
+}
+
+.cover-story li {
+    display: inline-block;
+    list-style: none;
+}
+
+.cover-header a {
+    color: white;
+}
