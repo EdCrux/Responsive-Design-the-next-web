@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.486);;
+}
+
+nav li {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    border-left: 1px solid rgba(211, 211, 211, 0.486);
+}
+
+.on-the-right {
+    float: right;
+}
+
+.fas {
+    transform: scale(-1, 1);
+    color: gray;
+    padding-top: 10px;
+    color: rgba(211, 211, 211);
+    font-size: 1.1em;
+}
+
+.fa-bars {
+    color: #f42;
+    font-size: 1.5em;
+}
+
