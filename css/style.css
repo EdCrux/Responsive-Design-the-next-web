@@ -6,7 +6,7 @@
 
 header {
     height: 48px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid rgba(211, 211, 211, 0.486);
     position: fixed;
 }
@@ -26,14 +26,13 @@ nav li {
 .fas {
     transform: scale(-1, 1);
     color: gray;
-    padding-top: 10px;
+    padding-top: 13px;
     color: rgba(211, 211, 211);
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .fa-bars {
     color: #f42;
-    font-size: 1.5em;
 }
 
 .nav-logo {
@@ -44,6 +43,9 @@ nav li {
 }
 
 .nav-logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 15px;
 }
@@ -62,7 +64,6 @@ nav li {
     color: white;
 }
 
-
 .cover-grid {
     grid-column: 1fr;
     display: grid;
@@ -70,8 +71,9 @@ nav li {
     grid-gap: 10px;
 }
 
-
 .cover-story {
+    width: 96%;
+    margin: 1.5% 1.5% 0;
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/bitmain-antminer-cryptocurrency-blockchain-bear-market-bear-downturn-796x448.jpg);
     background-size: cover;
     background-position: 50%;
@@ -90,4 +92,47 @@ nav li {
 
 .cover-header a {
     color: white;
+}
+
+.latest-news {
+    margin: 30px 0;
+}
+
+/* universal styling for anchors */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-anchors {
+    font-size: 32px;
+    color: #f42;
+    margin: 0 15px;
+}
+
+.container-latest-news li {
+    padding: 15px 0 0 15px;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-gap: 15px;
+}
+
+.container-latest-news a img {
+    width: 78px;
+    height: 78px;
+    border: 1px solid black;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_24411_primary_image_wide-2-540x270.jpg");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.descript {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.latest-news-author > a, .latest-news-author {
+    color: gray;
+    font-size: 12px;
 }
