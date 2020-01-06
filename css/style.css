@@ -4,12 +4,31 @@
     box-sizing: border-box;
 }
 
-header {
+/* Fonts */
+@font-face {
+    font-family: Avalon;
+    src: url(fonts/avalon-bold.woff);
+}
+
+@font-face {
+    font-family: arsR;
+    src: url(fonts/ars-maquette-regular.woff);
+}
+
+@font-face {
+    font-family: arsB;
+    src: url(fonts/ars-maquette-bold-alt.woff);
+}
+
+.header {
     height: 48px;
     width: 100vw;
     border-bottom: 1px solid rgba(211, 211, 211, 0.486);
     position: fixed;
+    z-index: 100;
+    background-color: white;
 }
+
 
 nav li {
     display: inline-block;
@@ -94,6 +113,9 @@ nav li {
     color: white;
 }
 
+.cover-title {
+    font-family: 'avalon';
+}
 .latest-news {
     margin: 30px 0;
 }
@@ -135,4 +157,85 @@ a {
 .latest-news-author > a, .latest-news-author {
     color: gray;
     font-size: 12px;
+}
+
+
+/* Investment section */
+
+.deals-header h2 a {
+    color: #FF4422;
+    font-family: Helvetica, sans-serif;
+}
+
+.deals-header a {
+    padding: 10px 20px;
+    display: block;
+    color: #FF4422;
+    font-family: Helvetica, sans-serif;
+}
+
+.invesments {
+    
+    border: 5px solid goldenrods;
+    height: 265px;
+}
+
+.invesments img {
+    position: absolute;
+    margin: 11.7px;
+    width: 60px;
+}
+
+.invest-name {
+    font-family: Helvetica, sans-serif;
+    background-color: #FF4422;
+    font-size: 18px;
+    color: white;
+    height: 50px;
+    padding: 10.7px 16px 10.7px 84px;
+}
+
+.investment-card {
+    background-color: rgba(255,68,34,0.08);
+    margin: 0;
+    padding: 10.7px 16px 10.7px 84px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.investment-card h5 {
+    font-size:13px;
+    font-weight: lighter;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.card2 {
+    height:82px;
+    padding: 0 15px;
+    background-color: rgba(255,68,34,0.03);
+}
+
+.card2 i {
+    color: black;
+    font-size: 18px;
+    transform: scale(1,1);
+    margin-right: 13px;
+}
+
+.card2 a {
+    font-size: 13px;
+}
+
+.small-wrapper{
+    background-color: rgba(255,68,34,0.03);
+    border-top: 1px solid  rgba(255,68,34,0.25);
+    text-align: center;
+    padding: 10px;
+}
+.small-wrapper small {
+    height: 63px;
+}
+
+.small-wrapper small span {
+    color:lightgray;
 }
