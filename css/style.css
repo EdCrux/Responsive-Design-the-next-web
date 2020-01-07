@@ -266,16 +266,17 @@ a {
 .section-popular {
     position: relative;
     margin-top: 10px;    
+    width: 100%;
+    height: 40%;
 }
 
 .section-popular a img {
-    width: 374px;
-    height: 281px;
+    width: 100%;
+    object-fit: cover;
     border: 1px solid black;
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/TNW2019-368x276.png");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/TNW2019-368x276.png"); 
     background-size: cover;
     z-index: 1;
-    
 }
 
 .popular-h5 {
@@ -286,7 +287,7 @@ a {
 
 .section-popular header {
     position: absolute;
-    top: 170px;
+    top: 50%;
     color: white;
     padding: 0 10px;
     font-size: 16px;
@@ -460,9 +461,10 @@ footer {
 }
 
 .footer-legal span {
-    color: rgba(255, 255, 255, 0.514);
+    display: block;
+    color: rgba(255, 255, 255, 0.65);
     font-family: "arsR";
-    font-size:12px;
+    font-size:14px;
 }
 
 .footer-legal a {
