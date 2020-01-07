@@ -4,20 +4,32 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 /* Fonts */
 @font-face {
-    font-family: Avalon;
-    src: url(fonts/avalon-bold.woff);
+    font-family: "Avalon-bold";
+    src: url(avalon-bold.woff) format('woff');
 }
 
 @font-face {
-    font-family: arsR;
-    src: url(fonts/ars-maquette-regular.woff);
+    font-family: "arsR";
+    src: url(ars-maquette-regular.woff) format('woff');
 }
 
 @font-face {
-    font-family: arsB;
-    src: url(fonts/ars-maquette-bold-alt.woff);
+    font-family: "arsB";
+    src: url(ars-maquette-bold-alt.woff) format('woff');
+}
+
+h5 {
+    font-family: "arsR";
+}
+
+h3 {
+    font-family: "Avalon-bold";
 }
 
 .header {
@@ -72,7 +84,6 @@ nav li {
 /* Cover section */ 
 .main {
     top:52px;
-    height: 8670px;
     position: relative;
     overflow: hidden;
 }
@@ -117,10 +128,11 @@ nav li {
 
 .cover-header a {
     color: white;
+    font-family:"Avalon-bold";;
 }
 
 .cover-title {
-    font-family: 'avalon';
+    font-family: 'Avalon';
 }
 
 .latest-news {
@@ -136,6 +148,7 @@ a {
 .section-anchors {
     font-size: 32px;
     color: #f42;
+    font-family: "Avalon-bold";
 }
 
 .container-latest-news li {
@@ -143,6 +156,7 @@ a {
     display: grid;
     grid-template-columns: 75px 1fr;
     grid-gap: 15px;
+    clear: both;
 }
 
 .container-latest-news a img {
@@ -158,6 +172,7 @@ a {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.5px;
+    font-family: "arsR";
 }
 
 .latest-news-author > a, .latest-news-author {
@@ -170,14 +185,14 @@ a {
 
 .deals-header h2 a {
     color: #FF4422;
-    font-family: Helvetica, sans-serif;
+    font-family: "Avalon-bold";
 }
 
 .deals-header a {
     padding: 10px 0px;
     display: block;
     color: #FF4422;
-    font-family: Helvetica, sans-serif;
+    
 }
 
 .invesments {
@@ -230,6 +245,7 @@ a {
 
 .card2 a {
     font-size: 13px;
+    font-family: "arsR";
 }
 
 .small-wrapper{
@@ -240,6 +256,7 @@ a {
 }
 .small-wrapper small {
     height: 63px;
+    font-family: "arsR";
 }
 
 .small-wrapper small span {
@@ -248,8 +265,7 @@ a {
 
 .section-popular {
     position: relative;
-    margin-top: 10px;
-    
+    margin-top: 10px;    
 }
 
 .section-popular a img {
@@ -279,6 +295,7 @@ a {
 
 .section-popular a {
     color: white;
+    font-family: "arsB";
 }
 
 .popular-list li {
@@ -320,14 +337,11 @@ a {
     background-position: 50% 0%;
 }
 
-.section-popular-list {
-    clear: both;
-}
+.section-popular-list { clear: both; }
 
 .section-popular-list ul{
     padding: 5px 0 5px 0px;
     list-style-type: none;
-    
 }
 
 .section-popular-list li {
@@ -336,10 +350,131 @@ a {
     font-size: 0.94em;
     border-bottom: 1px solid #ccc;
     padding: 3px 0 5px 0;
+    font-family: "arsR";
 }
 
 .section-popular-list li::before {
     content: "•"; 
     color: #F42;
     padding-right: 2px;
+}
+
+
+.see-deals {
+    color: #ff4422;
+    font-family: "arsR";
+    float:right;
+    margin-top: 10px;
+}
+
+.float-left {
+    float:left;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top:30px;
+    background-color: #131313;
+    height: 250px;
+}
+
+.social-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.social-icons {
+    position: relative;
+    top:20px;
+    max-width: 1152px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social-icons li{
+    background: #333333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.social-icons li:hover{
+    background-color: #131313;
+    border: 1.5px solid #333333; 
+    transition: 0.1s;
+}
+
+.social-icons a {
+    color: white;
+}
+
+.fa-rss, .fa-envelope {
+    padding: 0;
+    color:white;
+    font-size: 14px;
+}
+
+.fa-rss {
+    transform: scale(1,1);
+}
+
+
+.contact {
+    margin-top: 10px;
+    max-width: 800px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.contact li {
+    margin: 7px;
+}
+.contact a {
+    font-family: "arsR";
+    color:white;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.footer-legal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-legal span {
+    color: rgba(255, 255, 255, 0.514);
+    font-family: "arsR";
+    font-size:12px;
+}
+
+.footer-legal a {
+    font-family: "arsR";
+    font-size: 12px;
+    color:white;
+}
+
+.footer-legal img {
+    height: 9px;
+}
+
+.heart {
+    color: red;
 }
