@@ -24,6 +24,7 @@ li {
     src: url(ars-maquette-bold-alt.woff) format('woff');
 }
 
+
 h5 {
     font-family: "arsR";
 }
@@ -41,12 +42,18 @@ h3 {
     background-color: white;
 }
 
+
 nav li {
     display: inline-block;
     height: 48px;
     width: 48px;
     text-align: center;
+    vertical-align: baseline;
     border-left: 1px solid rgba(211, 211, 211, 0.486);
+}
+
+.top-black {
+    display: none;
 }
 
 .on-the-right {
@@ -427,7 +434,6 @@ footer {
     transform: scale(1,1);
 }
 
-
 .contact {
     margin-top: 15px;
     max-width: 800px;
@@ -482,6 +488,9 @@ footer {
 }
 
 @media screen and (max-width:320px) {
+    .hidden {
+        display: none;
+    }
 
     .social-icons li.hidden {
         display:none;
@@ -498,11 +507,14 @@ footer {
     .descript {
         font-size: 10px;
     }
-    
-
 }
 
 @media screen and (max-width: 390px) {
+
+    .hidden {
+        display: none;
+    }
+    
 
     .cover-title {
         font-size: 1.2em;
@@ -522,8 +534,21 @@ footer {
 
 }
 
+@media screen and (max-width: 767px) {
+    .hidden {
+        display: none;
+    }
+    
+}
 
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    main {
+        position: relative;
+        top: 150px;
+    }
+    
     .cover-grid {
         margin: 0 10px;
         grid-column: 1fr;
@@ -567,4 +592,76 @@ footer {
     .story3 .cover-title {
         font-size:1.6em;
     }
+
+    .header {
+        height: 80px;
+        width: 100%;
+    }
+
+    nav {
+        position: relative;
+        width: calc(100%-106px);
+        display: flex;
+        flex-flow: column;
+        height: 80px;
+    }
+
+    .top-black {
+        display: block;
+        width: 100%;
+        height: 32px;
+        background-color: black;
+    }
+
+    .top-black li {
+        height: 32px;
+        line-height: 32px;
+        width: fit-content;
+        margin-left: 10px;
+        border: none;
+    }
+
+    .top-black li a {
+        display: inline-block;
+        color: white;
+        font-size: 0.8em;
+        font-family: "arsR";
+    }
+
+    .on-the-right {
+        float: none;
+    }
+
+    .hidden {
+        
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .hidden a {
+        color: red;
+        font-family: "arsR";
+        font-size: 0.75em;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 106px;
+    }
+
+    .nav-logo {
+        width: 106px;
+        height: 80px;
+    }
+
+    .nav-logo img {
+        display: flex;
+        position: absolute;
+        top: 28%;
+    }
+
+
+
+
+
 }
