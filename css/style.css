@@ -593,6 +593,8 @@ footer {
         font-size:1.6em;
     }
 
+    /* Nav bar*/
+
     .header {
         height: 80px;
         width: 100%;
@@ -606,6 +608,7 @@ footer {
         height: 80px;
     }
 
+    
     .top-black {
         display: block;
         width: 100%;
@@ -628,18 +631,48 @@ footer {
         font-family: "arsR";
     }
 
+    .wrapperST {
+        display: flex;
+    }
+
+    .second {
+        position: relative;
+        top:32px;
+        display: flex;
+        width:60vw;
+    }
+
+    .second .fa-search {
+        padding:0;
+    }
+
+    .second li {
+        flex-grow:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .second li a {
+        font-size: 13px;
+    }
+
+    .third .fa-bars {
+        display: none;
+    }
+
     .on-the-right {
         float: none;
     }
 
     .hidden {
-        
         font-size: 20px;
         width: 100%;
     }
 
     .hidden a {
-        color: red;
+        color: gray;
         font-family: "arsR";
         font-size: 0.75em;
     }
