@@ -41,7 +41,6 @@ h3 {
     background-color: white;
 }
 
-
 nav li {
     display: inline-block;
     height: 48px;
@@ -132,6 +131,7 @@ nav li {
 
 .cover-title {
     font-family: 'Avalon';
+    /* font-size: 1.5em; */
 }
 
 .latest-news {
@@ -154,13 +154,13 @@ a {
     padding: 15px 0 0 0;
     display: grid;
     grid-template-columns: 75px 1fr;
-    grid-gap: 15px;
+    grid-gap: 14px;
     clear: both;
 }
 
 .container-latest-news a img {
-    width: 78px;
-    height: 78px;
+    width: 82px;
+    height: 85px;
     border: 1px solid black;
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_24411_primary_image_wide-2-540x270.jpg");
     background-position: 50%;
@@ -313,7 +313,6 @@ a {
     margin-bottom: 15px;
 }
 
-
 .container-latest-apps-links {
    padding: 10px 14px 0 14px;
    margin-bottom: 10px;
@@ -323,6 +322,7 @@ a {
     color: #f42;
     display: block;
     font-weight: 500;
+    font-size: 1em;
 }
 
 .latest-apps a img {
@@ -481,7 +481,7 @@ footer {
     color: red;
 }
 
-@media (max-width:320px) {
+@media screen and (max-width:320px) {
 
     .social-icons li.hidden {
         display:none;
@@ -495,5 +495,29 @@ footer {
         height: 8px;
     }
 
+    .descript {
+        font-size: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width: 390px) {
+
+    .cover-title {
+        font-size: 1.2em;
+    }
+
+    .descript {
+        font-size: 13px;
+    }
+    
+    .section-popular-list li {
+        font-size: 0.8em;
+    }
+    
+    .container-latest-apps a {
+        font-size: 0.8em;
+    }
 
 }
