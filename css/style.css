@@ -108,13 +108,12 @@ nav li {
 }
 
 .cover-story {
-    width: 96%;
+    width:95%;
     margin: 1.5% 1.5% 0;
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/bitmain-antminer-cryptocurrency-blockchain-bear-market-bear-downturn-796x448.jpg);
-    background-size: cover;
-    background-position: 50%;
-    background-color: rgb(136, 135, 135);
-    background-blend-mode: multiply;
+    background-size: 40px,cover;
+    background-image: url(/images/image_gradient.png),url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/bitmain-antminer-cryptocurrency-blockchain-bear-market-bear-downturn-796x448.jpg);
+    background-position: 50% 300px,1px 50%
+    
 }
 
 .cover-byline {
@@ -192,6 +191,7 @@ a {
     padding: 10px 0px;
     display: block;
     color: #FF4422;
+    font-family: "arsR";
     
 }
 
@@ -272,11 +272,8 @@ a {
 
 .section-popular a img {
     width: 100%;
-    object-fit: cover;
     border: 1px solid black;
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/TNW2019-368x276.png"); 
-    background-size: cover;
-    z-index: 1;
+    background-image:url(/images/cover-gradient.png), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/TNW2019-368x276.png");
 }
 
 .popular-h5 {
@@ -291,7 +288,6 @@ a {
     color: white;
     padding: 0 10px;
     font-size: 16px;
-    background-color: rgba(0,0,0,0.5);
 }
 
 .section-popular a {
@@ -378,11 +374,12 @@ footer {
     position: relative;
     top:30px;
     background-color: #131313;
-    height: 250px;
+    min-height: 200px;
 }
 
 .social-wrapper {
-    margin: 0 auto;
+
+    margin: 0 auto 30px auto;
     max-width: 800px;
     display: flex;
     align-items: center;
@@ -407,7 +404,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    margin:3px;
 }
 
 .social-icons li:hover{
@@ -432,24 +429,27 @@ footer {
 
 
 .contact {
-    margin-top: 10px;
+    margin-top: 15px;
     max-width: 800px;
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
 }
 
 .contact li {
-    margin: 7px;
+    margin: 1px;
 }
 .contact a {
     font-family: "arsR";
     color:white;
     opacity: 0.5;
-    font-size: 13px;
+    font-size: 12px;
+    padding: 0 3px;
 }
 
 .footer-legal {
-    position: absolute;
+    padding: 0 10px;
     bottom: 0;
     width: 100%;
     height: 100px;
@@ -479,4 +479,21 @@ footer {
 
 .heart {
     color: red;
+}
+
+@media (max-width:320px) {
+
+    .social-icons li.hidden {
+        display:none;
+    }
+
+    .footer-legal span {
+        font-size:11px;
+    }
+
+    .footer-legal img {
+        height: 8px;
+    }
+
+
 }
