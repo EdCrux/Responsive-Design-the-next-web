@@ -525,11 +525,19 @@ footer {
 
 @media screen and (min-width: 768px){
     .cover-grid {
+        margin: 0 10px;
         grid-column: 1fr;
         display: grid;
-        grid-template-rows: 100px 100px;
-        grid-gap: 8px;
+        grid-template-rows: minmax(100px,auto) minmax(100px,auto);
+        grid-gap: 10px;
         grid-template-columns: 2fr 1fr;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .cover-story {
+        margin: 0;
+        width: 100%;
     }
     
     .story1{
