@@ -1,4 +1,4 @@
-# Proj5_DesignUX_Heatmap
+# Responsive Design: The Next Web Page
 
 ---
 
@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/rsnazario/Proj5_DesignUX_Heatmap/a56c01c740fae44b9621561b3d17519540d1cf59/index.html)
+[Live Demo Link](https://raw.githack.com/EdCrux/Responsive-Design-the-next-web/feature-design-responsive/index.html)
 
 ## Getting Started
 
