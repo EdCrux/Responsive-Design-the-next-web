@@ -187,7 +187,6 @@ a {
     font-size: 12px;
 }
 
-
 /* Investment section */
 
 .deals-header h2 a {
@@ -200,12 +199,9 @@ a {
     display: block;
     color: #FF4422;
     font-family: "arsR";
-    
 }
 
 .invesments {
-    
-    border: 5px solid goldenrods;
     height: 265px;
 }
 
@@ -238,6 +234,7 @@ a {
     opacity: 0.5;
     text-transform: uppercase;
 }
+
 .card2 {
     height:82px;
     padding: 0 15px;
@@ -262,6 +259,7 @@ a {
     text-align: center;
     padding: 10px;
 }
+
 .small-wrapper small {
     height: 63px;
     font-family: "arsR";
@@ -342,7 +340,9 @@ a {
     background-position: 50% 0%;
 }
 
-.section-popular-list { clear: both; }
+.section-popular-list { 
+    clear: both;
+}
 
 .section-popular-list ul{
     padding: 5px 0 5px 0px;
@@ -364,7 +364,6 @@ a {
     padding-right: 2px;
 }
 
-
 .see-deals {
     color: #ff4422;
     font-family: "arsR";
@@ -379,10 +378,13 @@ a {
 /* Footer */
 
 footer {
-    position: relative;
-    top:30px;
+    /* position: relative;
+    top:30px;  */
+    margin-top: 70px;
+    width: 100%;
     background-color: #131313;
     min-height: 200px;
+    z-index: 100;
 }
 
 .social-wrapper {
@@ -393,6 +395,7 @@ footer {
     align-items: center;
     flex-direction: column;
 }
+
 .social-icons {
     position: relative;
     top:20px;
@@ -446,6 +449,7 @@ footer {
 .contact li {
     margin: 1px;
 }
+
 .contact a {
     font-family: "arsR";
     color:white;
@@ -537,8 +541,7 @@ footer {
 @media screen and (max-width: 767px) {
     .hidden {
         display: none;
-    }
-    
+    }   
 }
 
 
@@ -697,6 +700,7 @@ footer {
     /* lASTEST NEWS */ 
 
     .grid-wrapperV {
+        clear: both;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
         grid-template-rows: auto;
@@ -710,11 +714,45 @@ footer {
 
     .latest-news-image .latest-news-pic img {
         width: 100%;
-        height: 131px;
+        height: 150px;
     }
 
+    /* Investments */
 
+    .info-fundings li {
+        display: inline-block;
+        padding-right: 30px;
+    }
 
+    .grid-investments {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
 
+    /* Advertisings (From Apps do Distract) */
 
+    .grid-apps {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    .section-anchors {
+        font-size: 28px;
+    }
+    
+    .container-latest-apps a {
+        font-size: 0.85em;
+    }
+
+    .section-popular-list li {
+        font-size: 0.8em;
+    }
+
+    footer {
+        margin-top: 120px;
+    }
 }
