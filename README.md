@@ -5,6 +5,11 @@
 > This project is completed by Rafael Nazario and Eduardo Cruz, as part of Microverse curriculum.  
 
 ---
+## Preview
+
+![alt text]()
+
+
 
 ## Built With
 
