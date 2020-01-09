@@ -52,7 +52,7 @@ nav li {
     border-left: 1px solid rgba(211, 211, 211, 0.486);
 }
 
-.top-black {
+.top-black, .hidden-1024px {
     display: none;
 }
 
@@ -153,7 +153,7 @@ a {
 }
 
 .section-anchors {
-    font-size: 32px;
+    font-size: 28px;
     color: #f42;
     font-family: "Avalon-bold";
 }
@@ -370,11 +370,23 @@ a {
     padding-right: 2px;
 }
 
+.grid-wrapperV {
+    vertical-align: baseline;
+}
+
 .see-deals {
+    margin-left: 3px;
+    margin-top: 16px;
     color: #ff4422;
     font-family: "arsR";
     float:right;
-    margin-top: 10px;
+    font-size: 0.8em;
+    vertical-align: baseline;
+}
+
+.span-half {
+    float: left;
+    font-size: 0.5em;
 }
 
 .float-left {
@@ -638,9 +650,15 @@ footer {
 
     .top-black li a {
         display: inline-block;
-        color: white;
+        color: lightgray;
+        opacity: 0.8;
         font-size: 0.8em;
         font-family: "arsR";
+    }
+
+    .top-black .white {
+        color: white;
+        opacity: 1;
     }
 
     .wrapperST {
@@ -729,6 +747,19 @@ footer {
         height: 150px;
     }
 
+    .span-full-column {
+        grid-column: span 3;
+    }
+
+    .span-half {
+        grid-column: span 2;
+    }
+
+    .see-deals {
+        grid-column: span 1;
+        justify-self: flex-end;
+    }
+
     /* Investments */
 
     .info-fundings li {
@@ -767,4 +798,88 @@ footer {
     footer {
         margin-top: 120px;
     }
+
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        width: 100%;
+    }
+    
+    .nav-logo {
+        display: none;
+    }
+
+    .top-black {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-black li a {
+        color: lightgray;
+        opacity: 0.8;
+    }
+
+    .top-black .white {
+        color: white;
+        opacity: 1;
+    }
+
+    .black-right {
+        margin-right: 15px;
+    }
+
+    .wrapperST {
+        position: static;
+    }
+
+    .hidden-1024px {
+        display: inline-block;
+    }
+
+    .third {
+        position: absolute;
+        right: -48px;
+        top: 32px;
+    }
+
+    .grid-wrapperV {
+        margin:0 auto;
+        max-width: 1000px;
+        clear: both;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px,1fr));
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    .span-full-column {
+        grid-column: span 4;
+    }
+
+    .span-half {
+        grid-column: span 3;
+    }
+
+    .see-deals {
+        grid-column: span 1;
+        justify-self: flex-end;
+    }
+
+
+    .grid-investments {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .grid-apps {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+    }
+
 }
