@@ -123,7 +123,7 @@ main {
   width: 95%;
   margin: 1.5% 1.5% 0;
   background-size: 40px, cover;
-  background-image: url(/images/image_gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/bitmain-antminer-cryptocurrency-blockchain-bear-market-bear-downturn-796x448.jpg);
+  background-image: url(images/image_gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/bitmain-antminer-cryptocurrency-blockchain-bear-market-bear-downturn-796x448.jpg);
   background-position: 50% 300px, 1px 50%;
 }
 
@@ -324,7 +324,7 @@ a {
 .section-popular a img {
   width: 100%;
   border: 1px solid black;
-  background-image: url(/images/cover-gradient.png), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/TNW2019-368x276.png");
+  background-image: url(images/cover-gradient.png), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/TNW2019-368x276.png");
 }
 
 .popular-h5 {
@@ -827,7 +827,7 @@ footer {
     max-height: 790px;
     height: 90vh;
     width: 100%;
-    background-image: url(/images/cover-gradient.png);
+    background-image: url(images/cover-gradient.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
