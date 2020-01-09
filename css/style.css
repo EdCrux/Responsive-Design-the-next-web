@@ -24,6 +24,10 @@ li {
   src: url(ars-maquette-bold-alt.woff) format('woff');
 }
 
+.all-hidden {
+  display:none;
+}
+
 h5 {
   font-family: "arsR", sans-serif;
 }
