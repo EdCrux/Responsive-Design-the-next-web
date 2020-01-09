@@ -240,15 +240,15 @@ a {
   color: white;
 }
 
-.section-popular .shadow a {
-  color: white;
-  font-family: "arsB", sans-serif;
-}
-
 .deals-header h2 a {
   color: #f42;
   font-family: "Avalon-bold", sans-serif;
   font-size: 1.2em;
+}
+
+.section-popular .shadow a {
+  color: white;
+  font-family: "arsB", sans-serif;
 }
 
 .invesments {
