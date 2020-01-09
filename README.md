@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Proj5_DesignUX_Heatmap
+=======
+# Responsive-Design-the-next-web
+>>>>>>> 2950e9b4644942daa3ce4207590ad7cab8046295
 
 ---
 
@@ -14,7 +18,11 @@
 
 ## Live Demo
 
+<<<<<<< HEAD
 [Live Demo Link](https://rawcdn.githack.com/rsnazario/Proj5_DesignUX_Heatmap/a56c01c740fae44b9621561b3d17519540d1cf59/index.html)
+=======
+[Live Demo Link]()
+>>>>>>> 2950e9b4644942daa3ce4207590ad7cab8046295
 
 ## Getting Started
 
