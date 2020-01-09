@@ -240,7 +240,7 @@ a {
   color: white;
 }
 
-.section-popular a {
+.section-popular .shadow a {
   color: white;
   font-family: "arsB", sans-serif;
 }
@@ -248,6 +248,7 @@ a {
 .deals-header h2 a {
   color: #f42;
   font-family: "Avalon-bold", sans-serif;
+  font-size: 1.2em;
 }
 
 .invesments {
@@ -641,7 +642,7 @@ footer {
   }
 
   .container-latest-apps a {
-    font-size: 0.85em;
+    font-size: 1.05em;
   }
 
   .top-black li {
@@ -682,7 +683,7 @@ footer {
 
   .third {
     position: absolute;
-    right: 50px;
+    right: -48px;
     top: 0;
   }
 
