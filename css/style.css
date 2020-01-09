@@ -42,6 +42,11 @@ h3 {
     background-color: white;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 nav li {
     display: inline-block;
@@ -92,6 +97,7 @@ main {
     top:52px;
     position: relative;
     overflow: hidden;
+    margin:0 auto;
 }
 
 .wrapper {
@@ -134,12 +140,11 @@ main {
 
 .cover-header a {
     color: white;
-    font-family:"Avalon-bold";;
+    font-family:"Avalon-bold";
 }
 
 .cover-title {
     font-family: 'Avalon';
-    /* font-size: 1.5em; */
 }
 
 .latest-news {
@@ -169,7 +174,6 @@ a {
 .container-latest-news a img {
     width: 82px;
     height: 85px;
-    border: 1px solid black;
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_24411_primary_image_wide-2-540x270.jpg");
     background-position: 50%;
     background-size: cover;
@@ -332,6 +336,7 @@ a {
 }
 
 .shadow {
+    width: 100%;
     position: absolute;
     bottom:0;
     background: linear-gradient(to bottom, rgba(255, 252, 255, 0.014) 0%, rgba(24, 24, 24, 0.849) 50%, rgba(0, 0, 0, 0.993) 71%, rgba(0, 0, 0, 0.884) 100%);
@@ -553,13 +558,20 @@ footer {
     .container-latest-apps a {
         font-size: 0.8em;
     }
+    .cover-logo {
+        display:none;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
     .hidden {
         display: none;
-    }   
+    }
+    .cover-logo {
+        display:none;
+    }
+    
 }
 
 
@@ -574,7 +586,7 @@ footer {
         margin: 0 10px;
         grid-column: 1fr;
         display: grid;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: minmax(200px,1fr) minmax(200px,1fr);
         grid-gap: 10px;
         grid-template-columns: 2fr 1fr;
         justify-items: center;
@@ -725,8 +737,6 @@ footer {
     /* lASTEST NEWS */ 
 
     .grid-wrapperV {
-        margin:0 auto;
-        max-width: 1000px;
         clear: both;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -739,12 +749,11 @@ footer {
         flex-direction: column;
     }
 
-    .latest-news-image .latest-news-pic {
-        align-self: center;
-     }
+
     .latest-news-image .latest-news-pic img {
         width: 95%;
-        height: 150px;
+        height: auto;
+        max-height: 200px;
     }
 
     .span-full-column {
@@ -799,6 +808,21 @@ footer {
         margin-top: 120px;
     }
 
+    .cover-logo {
+        display:none;
+    }
+
+    .deals-header .info-fundings li {
+        padding: 0;
+    }
+
+    .deals-header .info-fundings .after-lines::before {
+        content: '| ';
+    }
+    .deals-header .info-fundings .after-lines::after {
+        content: ' |';
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -807,8 +831,34 @@ footer {
     }
     
     .nav-logo {
-        display: none;
+        display:none;
     }
+
+    .cover-logo {
+        display:block;
+        position: absolute;
+        top:0px;
+        width: 100%;
+        transition: 0.1s;
+    }
+    .logo-inside {
+        max-height: 790px;
+        height: 90vh;
+        width: 100%;
+        background-image: url(/images/cover-gradient.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .logo-inside a {
+        margin: 50px;
+    }
+
+    .logo-inside img {
+        margin: 28px 29px 0 -21px;
+        height: 87px;
+    }
+
 
     .top-black {
         position: static;
@@ -845,8 +895,6 @@ footer {
     }
 
     .grid-wrapperV {
-        margin:0 auto;
-        max-width: 1000px;
         clear: both;
         display: grid;
         grid-template-columns: repeat(4, minmax(200px,1fr));
@@ -867,7 +915,6 @@ footer {
         justify-self: flex-end;
     }
 
-
     .grid-investments {
         margin-top: 20px;
         display: grid;
@@ -880,6 +927,36 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 25px;
+    }
+
+    .cover-grid {
+        grid-template-rows: minmax(250px,1fr) minmax(200px,1fr);
+    }
+    .deals-header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .deals-header .info-fundings {
+        justify-self: flex-end;
+        align-self: center;
+    }
+
+    .deals-header .info-fundings li {
+        padding: 0;
+    }
+
+    .deals-header .info-fundings .after-lines::before {
+        content: '| ';
+    }
+    .deals-header .info-fundings .after-lines::after {
+        content: ' |';
+    }
+
+    .footer-legal span {
+        display: inline-block;
+        font-size: 16px;
     }
 
 }
